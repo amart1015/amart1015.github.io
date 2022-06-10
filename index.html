@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixster</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joan&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Flixster</h1>
+    <form class="searchClass">
+        <div id="textbox">
+          <input type="text" name="movie" id="search-input" placeholder="Search for a movie: " required>
+        </div>
+        <div id="submitButton">
+          <input type="submit" value="Submit">
+        </div>
+        <div id="clearButton">
+            <button id="close-search-btn" onClick="window.location.reload();">Home</button>
+        </div>
+    </form>
+    <h2 id="now-playing">Now playing:</h2>
+    <div class="movieGrid" id="movie-grid">
+        <div class="movieCard" id="movie-card">
+        </div>
+        <form class="loadMore">
+            <div id="Button">
+            </div>
+        </form>
+
+    </div>
+    <div class=""></div>
+    <script src="script.js"></script>
+</body>
+</html>

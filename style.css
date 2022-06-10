@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851a6 100%);
+    color: black;
+    font-family: 'Joan', serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.searchClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 45pt;
+}
+h2{
+    margin-left: 60px;
+    font-size: 20pt;
+}
+p{
+    font-size: 12pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.movieCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    text-overflow: clip;
+    padding: 20pt;
+}
+.movie-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    max-width: 300px;
+    margin-left: 20pt;
+    margin-right: 20pt;
+
+}
+img{
+    width: 300px;
+    height: 450px;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding-top: 10pt;
+    border-radius: 5%;
+}
+.loadMore{
+    display: flex;
+    justify-content: center;
+}
+
+
