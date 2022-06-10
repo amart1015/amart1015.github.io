@@ -4,9 +4,9 @@
 
 Submitted by: **Anthony Martin**
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: **12** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixster Deployed Site](https://amart1015.github.io/)
 
 ### Application Features
 
@@ -35,30 +35,28 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 #### STRETCH FEATURES
 
 - [x] Deploy website using GitHub Pages. 
-- [ ] Allow user to view more details about a movie within a popup.
+- [x] Allow user to view more details about a movie within a popup.
 - [x] Improve the user experience through CSS & animation.
 - [ ] Allow movie video trailers to be played using [embedded YouTube](https://support.google.com/youtube/answer/171780?hl=en)
-- [ ] Implement anything else that you can get done to improve the app functionality!
+- [x] Implement anything else that you can get done to improve the app functionality!
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
+[Youtube video showing how the website works.](https://youtu.be/N2Ka8cOQDyY)
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The topics that were discussed in the lab extremely helped me with the implementation of my website. I only felt really unprepared for the first lab 1, I had a really hard time with css. I felt good about all of the other projects.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would have liked to be able to add the embedded youtube link, but I was able to achieve a lot!
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+I was very happy with my performance this week. I was able to implement most of the features that I wanted to implement. I think my website came out great. I think next week I would like to improve my css skills, and my code structure.
 
 ### Open-source libraries used
 
@@ -67,3 +65,5 @@ Add your response here
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+I would like to give a shoutout to all of the TA's, as well as the instructor. I enjoyed working with my partners, I would like to shoutout Shehab and Travis for providing a fun yet productive environment.
