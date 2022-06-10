@@ -20,14 +20,13 @@ h2{
     font-size: 20pt;
 }
 p{
-    font-size: 12pt;
+    font-size: 15pt;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .movieCard{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     text-align: center;
     text-overflow: clip;
     padding: 20pt;
@@ -55,5 +54,38 @@ img{
     display: flex;
     justify-content: center;
 }
-
-
+.popUp1{
+    position:fixed;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    text-overflow: clip;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin: 2%;
+    padding: 5%;
+    color: white;
+}
+.movieinfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-overflow: clip;
+}
+h4{
+    margin:3px
+}
+.exitButton{
+    padding: 5px;
+    margin: 10px
+}
+iframe{
+    display: flex;
+    flex-shrink: 10;
+}
