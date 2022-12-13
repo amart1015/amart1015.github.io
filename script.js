@@ -6,13 +6,13 @@ let movieI;
 let page=1;
 var pstatus;
 var search;
+var doneFindingTrailer=false;
 let nText= document.querySelector("#now-playing");
 let movieCard= document.querySelector("#movie-card");
 let movieForm= document.querySelector("form");
 let movieArea= document.querySelector("#movie-grid");
 let moviePic= document.querySelector("#movie-poster");
 let popUp= document.querySelector("#pop-up");
-let genre1= document.querySelector("genres1");
 
 window.onload = function popularfunction(){
     pstatus=1;
@@ -44,35 +44,47 @@ async function getResults(apiUrl){
     let responseData= await response.json();
     displayResults(responseData);
     return responseData;
-    
 }
-async function getInfo(apiUrl){
+
+async function getInfo(apiUrl, videoUrl){
     let response= await fetch(apiUrl);
+    let videoResponse= await fetch(videoUrl);
     console.log("response is ", response);
+    console.log("video response is ", videoResponse);
     let responseData= await response.json();
-    popUpp(responseData);
-    return responseData;
-    
+    let videoResponseData= await videoResponse.json();
+    popUpp(responseData, videoResponseData);
+    return responseData, videoResponseData;
 }
 
 function image(i){
     popUp.innerHTML='';
     let apiUrl= "https://api.themoviedb.org/3/movie/"+i+ "?api_key=8ec824aa410e8832079ac8eedaa438ec&language=en-US"
-    getInfo(apiUrl)
+    let videoUrl= "https://api.themoviedb.org/3/movie/" + i + "/videos?api_key=8ec824aa410e8832079ac8eedaa438ec&language=en-US"
+    getInfo(apiUrl, videoUrl)
 }
 
-function popUpp(movieData){
+function popUpp(movieData, videoData){
+    console.log(videoData)
+    doneFindingTrailer=false;
     popUp.innerHTML+=(`
     <div class= "popUp1">
             <iframe class = "ytplayer" id="ytplayer" type="text/html" width="640" height="360"
-            src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+            src="https://www.youtube.com/embed/${videoData.results.map((i)=>{
+                if(i.type=="Trailer" && doneFindingTrailer==false){
+                    doneFindingTrailer=true;
+                    return i.key;
+                }
+            }).join('')}"
             frameborder="0"></iframe>
             <h4>${movieData.title}</h4>
             <div class="movieinfo">
                 <h4>${movieData.runtime} min |</h4>
                 <h4>${movieData.release_date} | </h4>
-                <h4>${movieData.genres[0].name} |</h4>
-                <h4>&#9733;${movieData.vote_average}</h4>
+                <h4>${movieData.genres.map((i) =>{
+                    return i.name;
+                }).join(', ')} |</h4>
+                <h4>&#9733;${movieData.vote_average}/10</h4>
             </div>
             <div class="movie-description">
                 <h4>${movieData.overview}</h4>
