@@ -13,26 +13,14 @@
 </head>
 <body>
     <div class="mainScreen" id="main-screen">
-    <h1>Flixster</h1>
-    <form class="searchClass">
-        <div id="textbox">
-          <input type="text" name="movie" id="search-input" placeholder="Search for a movie: " required>
-        </div>
-        <div id="submitButton">
-          <input type="submit" value="Submit">
-        </div>
-        <div id="clearButton">
-            <button id="close-search-btn" onClick="window.location.reload();">Home</button>
-        </div>
-    </form>
+    <h1 class="flixster"><a href="index.html">Flixster</a></h1>
+    <form class="searchClass" id="search-input">
+        <input type="text" name="movie" class="search-input" placeholder="Type to Search...">
+    </form> 
     <h2 id="now-playing">Now playing:</h2>
     <div class="movieGrid" id="movie-grid">
         <div class="movieCard" id="movie-card">
         </div>
-        <form class="loadMore">
-            <div id="Button">
-            </div>
-        </form>
     </div>
     <h4></h4>
     <div class=""></div>
