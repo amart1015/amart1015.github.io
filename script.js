@@ -44,6 +44,11 @@ movieForm.addEventListener("input", (evt) =>{
     }
 })
 
+movieForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    // Perform your desired actions here, such as searching or displaying results
+});
+
 function leaveButton(){
     popUp.innerHTML='';
 }
